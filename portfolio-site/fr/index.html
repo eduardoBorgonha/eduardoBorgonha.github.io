@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eduardo Borgonha Lopes · Génie électrique</title>
+  <meta name="description" content="Élève-ingénieur en génie électrique (double diplôme INP-ENSEEIHT / UFSC), orienté vers l'électronique de puissance pour l'intégration au réseau. Recherche un stage de 2e année, été 2027.">
+  <link rel="alternate" hreflang="en" href="https://eduardoborgonha.github.io/">
+  <link rel="alternate" hreflang="fr" href="https://eduardoborgonha.github.io/fr/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#">eduardo<span>.</span>borgonha</a>
+    <nav class="menu">
+      <a href="#about">Profil</a>
+      <a href="#projects">Projets</a>
+      <a href="#path">Parcours</a>
+      <a href="#skills">Compétences</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="lang"><a href="../" hreflang="en">EN</a><strong>FR</strong></div>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="status">Recherche un stage de 2e année · été 2027</div>
+        <h1>Eduardo Borgonha Lopes</h1>
+        <p class="tagline">Élève-ingénieur en génie électrique, orienté vers <em>l'électronique de puissance pour l'intégration au réseau</em>.</p>
+        <p class="sub">Double diplôme INP-ENSEEIHT (département 3EA, parcours Énergie) et UFSC, Brésil. Je m'intéresse aux onduleurs connectés au réseau, à leur commande et aux études de réseaux électriques.</p>
+        <div class="buttons">
+          <a class="btn primary" href="../assets/cv-eduardo-fr.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+          <a class="btn" href="#contact">Contact</a>
+          <a class="btn" href="https://github.com/eduardoBorgonha" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <img class="hero-photo" src="../assets/photo.jpg" alt="Portrait d'Eduardo Borgonha Lopes">
+    </div>
+    <div class="wrap">
+      <svg class="wave" viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 20 Q 31.25 0 62.5 20 T 125 20 T 187.5 20 T 250 20 T 312.5 20 T 375 20 T 437.5 20 T 500 20 T 562.5 20 T 625 20 T 687.5 20 T 750 20 T 812.5 20 T 875 20 T 937.5 20 T 1000 20" fill="none" stroke="currentColor" stroke-width="2"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- PROFIL -->
+  <section id="about">
+    <div class="wrap">
+      <p class="eyebrow">Profil</p>
+      <h2>Du logiciel au réseau électrique</h2>
+      <div class="lead">
+        <p>Je suis élève-ingénieur brésilien en génie électrique, actuellement à Toulouse dans le cadre d'un double diplôme entre l'Université fédérale de Santa Catarina (UFSC) et l'INP-ENSEEIHT, où je suis le parcours Énergie du département 3EA.</p>
+        <p>Mon parcours a commencé par une formation de technicien en développement de systèmes : le logiciel fait donc partie de ma manière d'aborder les problèmes d'ingénierie. Au laboratoire LABSPOT de l'UFSC, je travaille sur les réseaux de distribution avec production décentralisée : leur simulation sous OpenDSS et la prévision de leur charge par apprentissage automatique.</p>
+        <p>Je souhaite maintenant approfondir l'électronique de puissance pour l'intégration au réseau : les onduleurs connectés au réseau, leur commande et les études électriques qui encadrent leur raccordement.</p>
+        <p><strong>Nationalités brésilienne et italienne</strong> : aucun visa n'est nécessaire pour travailler dans l'UE.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projects">
+    <div class="wrap">
+      <p class="eyebrow">Projets</p>
+      <h2>Réalisations</h2>
+      <div class="cards">
+
+        <article class="card featured">
+          <div class="meta"><span class="theme">Qualité de l'énergie</span> · avr. 2026</div>
+          <h3>Analyseur de THD de courant en temps réel</h3>
+          <p>Analyseur embarqué sur ESP32-C3 (RISC-V) avec un capteur ACS712. Il calcule la valeur efficace vraie, la composante continue et le THD du courant directement sur la carte, grâce à une FFT écrite en C et une architecture de tâches FreeRTOS.</p>
+          <ul class="tags"><li>C</li><li>ESP-IDF</li><li>FreeRTOS</li><li>FFT</li><li>Harmoniques</li></ul>
+          <div class="links"><a href="https://github.com/eduardoBorgonha/thd-current-esp32c3" target="_blank" rel="noopener">Voir sur GitHub →</a></div>
+        </article>
+
+        <article class="card">
+          <div class="meta"><span class="theme">Études de réseaux</span> · mars–oct. 2025</div>
+          <h3>sds-run : simulations QSTS automatisées</h3>
+          <p>Outil en ligne de commande en Python qui automatise des simulations de flux de puissance quasi statiques temporelles (QSTS) sous OpenDSS sur des départs SMART-DS, afin de générer des données de réseaux avec production photovoltaïque décentralisée et batteries.</p>
+          <ul class="tags"><li>Python</li><li>OpenDSS</li><li>QSTS</li><li>SMART-DS</li><li>Production décentralisée</li></ul>
+          <div class="links"><a href="https://github.com/eduardoBorgonha/sds-run-labspot" target="_blank" rel="noopener">Voir sur GitHub →</a></div>
+        </article>
+
+        <article class="card">
+          <div class="meta"><span class="theme">Données réseau &amp; ML</span> · oct. 2025–août 2026</div>
+          <h3>Prévision de charge dans les réseaux de distribution actifs</h3>
+          <p>Pipeline complet d'apprentissage automatique pour la prévision de charge dans des réseaux basse tension avec production décentralisée, à partir de données de PMU : analyse de séries temporelles, ingénierie de caractéristiques, entraînement, validation et évaluation critique des modèles.</p>
+          <ul class="tags"><li>Python</li><li>Pandas</li><li>Scikit-learn</li><li>Séries temporelles</li><li>PMU</li></ul>
+          <div class="links">Recherche au LABSPOT · article en cours de rédaction</div>
+        </article>
+
+        <article class="card">
+          <div class="meta"><span class="theme">Systèmes embarqués</span> · avr. 2024–mars 2025</div>
+          <h3>PET Greenhouse : surveillance environnementale</h3>
+          <p>Système microcontrôlé en C++ de surveillance environnementale, avec communication Bluetooth et tableau de bord en temps réel développé en Python avec Streamlit.</p>
+          <ul class="tags"><li>C++</li><li>Bluetooth</li><li>Python</li><li>Streamlit</li></ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PARCOURS -->
+  <section id="path">
+    <div class="wrap">
+      <p class="eyebrow">Parcours</p>
+      <h2>Expérience &amp; formation</h2>
+      <div class="two-col">
+        <div>
+          <h3>Expérience</h3>
+          <ul class="timeline">
+            <li>
+              <span class="when">mars 2025 – août 2026</span>
+              <strong>LABSPOT, UFSC</strong>
+              <span class="role">Boursier d'initiation scientifique (PIBIC)</span>
+              <p>Prévision de charge dans les réseaux de distribution actifs avec production décentralisée, à partir de données de PMU basse tension. Tuteur : Prof. Dr. Miguel Moreto.</p>
+            </li>
+            <li>
+              <span class="when">avr. 2024 – sept. 2025</span>
+              <strong>PET EEL (Programme d'éducation tutorale)</strong>
+              <span class="role">Coordinateur général</span>
+              <p>Gestion d'équipes pluridisciplinaires (méthode Scrum, budget) et organisation d'événements, dont un voyage technique et la semaine académique SAEEL 2024.</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Formation</h3>
+          <ul class="timeline">
+            <li>
+              <span class="when">août 2026 – aujourd'hui</span>
+              <strong>INP-ENSEEIHT, Toulouse</strong>
+              <span class="role">Élève-ingénieur, département 3EA, parcours Énergie</span>
+              <p>Programme de double diplôme.</p>
+            </li>
+            <li>
+              <span class="when">2023 – aujourd'hui</span>
+              <strong>UFSC, Florianópolis, Brésil</strong>
+              <span class="role">Génie électrique (formation d'ingénieur en cinq ans)</span>
+            </li>
+            <li>
+              <span class="when">2021 – 2022</span>
+              <strong>SENAI, Jaraguá do Sul, Brésil</strong>
+              <span class="role">Technicien en développement de systèmes</span>
+              <p>Programmation orientée objet, bases de données, développement web.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPÉTENCES -->
+  <section id="skills">
+    <div class="wrap">
+      <p class="eyebrow">Compétences</p>
+      <h2>Outils</h2>
+      <div class="skills">
+        <div class="skill-box">
+          <h3>Simulation &amp; ingénierie</h3>
+          <ul class="tags"><li>OpenDSS</li><li>MATLAB</li><li>Simulink</li><li>PLECS</li><li>PSIM</li></ul>
+        </div>
+        <div class="skill-box">
+          <h3>Programmation &amp; données</h3>
+          <ul class="tags"><li>Python</li><li>Pandas</li><li>Scikit-learn</li><li>Matplotlib</li><li>C/C++</li><li>ESP-IDF</li><li>PlatformIO</li><li>Java</li><li>SQL</li><li>VHDL</li></ul>
+        </div>
+        <div class="skill-box">
+          <h3>Langues</h3>
+          <ul class="tags"><li>Portugais · maternelle</li><li>Anglais · C1</li><li>Français · B2</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <p class="eyebrow">Contact</p>
+      <h2>Échangeons</h2>
+      <p class="lead">Je recherche un stage de 2e année pour l'été 2027, idéalement en électronique de puissance, intégration au réseau ou études de réseaux électriques.</p>
+      <ul class="contact-list">
+        <li><span>E-mail</span><a href="mailto:eduardo.borgonha-lopes@etu.inp-n7.fr">eduardo.borgonha-lopes@etu.inp-n7.fr</a></li>
+        <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/eduardo-borgonha-lopes-1304a2300" target="_blank" rel="noopener">eduardo-borgonha-lopes</a></li>
+        <li><span>GitHub</span><a href="https://github.com/eduardoBorgonha" target="_blank" rel="noopener">eduardoBorgonha</a></li>
+        <li><span>Ville</span>Toulouse, France</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Eduardo Borgonha Lopes</div>
+</footer>
+
+</body>
+</html>

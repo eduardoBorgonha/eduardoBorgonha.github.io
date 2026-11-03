@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eduardo Borgonha Lopes · Electrical Engineering</title>
+  <meta name="description" content="Electrical engineering student (INP-ENSEEIHT / UFSC double degree) focused on power electronics for grid integration. Seeking a 2nd-year internship, summer 2027.">
+  <link rel="alternate" hreflang="en" href="https://eduardoborgonha.github.io/">
+  <link rel="alternate" hreflang="fr" href="https://eduardoborgonha.github.io/fr/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#">eduardo<span>.</span>borgonha</a>
+    <nav class="menu">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#path">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="lang"><strong>EN</strong><a href="fr/" hreflang="fr">FR</a></div>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="status">Looking for a 2nd-year internship · summer 2027</div>
+        <h1>Eduardo Borgonha Lopes</h1>
+        <p class="tagline">Electrical engineering student focused on <em>power electronics for grid integration</em>.</p>
+        <p class="sub">Double degree INP-ENSEEIHT (3EA, Energy track) &amp; UFSC, Brazil. Interested in grid-connected inverters, their control, and power system studies.</p>
+        <div class="buttons">
+          <a class="btn primary" href="assets/cv-eduardo-fr.pdf" target="_blank" rel="noopener">CV (PDF, French)</a>
+          <a class="btn" href="#contact">Contact</a>
+          <a class="btn" href="https://github.com/eduardoBorgonha" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <img class="hero-photo" src="assets/photo.jpg" alt="Portrait of Eduardo Borgonha Lopes">
+    </div>
+    <div class="wrap">
+      <svg class="wave" viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 20 Q 31.25 0 62.5 20 T 125 20 T 187.5 20 T 250 20 T 312.5 20 T 375 20 T 437.5 20 T 500 20 T 562.5 20 T 625 20 T 687.5 20 T 750 20 T 812.5 20 T 875 20 T 937.5 20 T 1000 20" fill="none" stroke="currentColor" stroke-width="2"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <p class="eyebrow">About</p>
+      <h2>From software to the power grid</h2>
+      <div class="lead">
+        <p>I'm a Brazilian electrical engineering student, currently in Toulouse for a double degree between the Federal University of Santa Catarina (UFSC) and INP-ENSEEIHT, where I follow the 3EA department's Energy track.</p>
+        <p>My path started with a technical degree in systems development, so software is part of how I approach engineering problems. At UFSC's LABSPOT lab I work on distribution networks with distributed generation: simulating them in OpenDSS and forecasting their load with machine learning.</p>
+        <p>Next, I want to go deeper into power electronics for grid integration: grid-connected inverters, their control, and the electrical studies that decide how they connect to the network.</p>
+        <p><strong>Brazilian and Italian citizen</strong>, so no visa is needed to work in the EU.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="wrap">
+      <p class="eyebrow">Projects</p>
+      <h2>Selected work</h2>
+      <div class="cards">
+
+        <article class="card featured">
+          <div class="meta"><span class="theme">Power quality</span> · Apr 2026</div>
+          <h3>Real-time current THD analyzer</h3>
+          <p>Embedded analyzer on an ESP32-C3 (RISC-V) with an ACS712 sensor. Computes True RMS, DC level and current THD on the board, using an FFT written from scratch in C and a FreeRTOS task architecture.</p>
+          <ul class="tags"><li>C</li><li>ESP-IDF</li><li>FreeRTOS</li><li>FFT</li><li>Harmonics</li></ul>
+          <div class="links"><a href="https://github.com/eduardoBorgonha/thd-current-esp32c3" target="_blank" rel="noopener">View on GitHub →</a></div>
+        </article>
+
+        <article class="card">
+          <div class="meta"><span class="theme">Power system studies</span> · Mar–Oct 2025</div>
+          <h3>sds-run: automated QSTS simulations</h3>
+          <p>Python command-line tool that automates quasi-static time-series (QSTS) power-flow simulations in OpenDSS on SMART-DS feeders, generating network data for grids with distributed PV and batteries.</p>
+          <ul class="tags"><li>Python</li><li>OpenDSS</li><li>QSTS</li><li>SMART-DS</li><li>Distributed generation</li></ul>
+          <div class="links"><a href="https://github.com/eduardoBorgonha/sds-run-labspot" target="_blank" rel="noopener">View on GitHub →</a></div>
+        </article>
+
+        <article class="card">
+          <div class="meta"><span class="theme">Grid data &amp; ML</span> · Oct 2025–Aug 2026</div>
+          <h3>Load forecasting in active distribution networks</h3>
+          <p>End-to-end machine learning pipeline for load forecasting in low-voltage networks with distributed generation, based on PMU data: time-series analysis, feature engineering, training, validation and critical evaluation of the models.</p>
+          <ul class="tags"><li>Python</li><li>Pandas</li><li>Scikit-learn</li><li>Time series</li><li>PMU</li></ul>
+          <div class="links">Research at LABSPOT · paper in preparation</div>
+        </article>
+
+        <article class="card">
+          <div class="meta"><span class="theme">Embedded systems</span> · Apr 2024–Mar 2025</div>
+          <h3>PET Greenhouse monitoring</h3>
+          <p>Microcontroller-based environmental monitoring system in C++, with Bluetooth communication and a real-time dashboard built in Python with Streamlit.</p>
+          <ul class="tags"><li>C++</li><li>Bluetooth</li><li>Python</li><li>Streamlit</li></ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE + EDUCATION -->
+  <section id="path">
+    <div class="wrap">
+      <p class="eyebrow">Path</p>
+      <h2>Experience &amp; education</h2>
+      <div class="two-col">
+        <div>
+          <h3>Experience</h3>
+          <ul class="timeline">
+            <li>
+              <span class="when">Mar 2025 – Aug 2026</span>
+              <strong>LABSPOT, UFSC</strong>
+              <span class="role">Undergraduate research fellow (PIBIC)</span>
+              <p>Load forecasting in active distribution networks with distributed generation, using low-voltage PMU data. Supervisor: Prof. Dr. Miguel Moreto.</p>
+            </li>
+            <li>
+              <span class="when">Apr 2024 – Sep 2025</span>
+              <strong>PET EEL (Tutorial Education Program)</strong>
+              <span class="role">General coordinator</span>
+              <p>Led multidisciplinary teams (Scrum, budget) and organized events, including a technical trip and the SAEEL 2024 academic week.</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Education</h3>
+          <ul class="timeline">
+            <li>
+              <span class="when">Aug 2026 – present</span>
+              <strong>INP-ENSEEIHT, Toulouse</strong>
+              <span class="role">Engineering degree, 3EA department, Energy track</span>
+              <p>Double degree program.</p>
+            </li>
+            <li>
+              <span class="when">2023 – present</span>
+              <strong>UFSC, Florianópolis, Brazil</strong>
+              <span class="role">Electrical Engineering (5-year degree)</span>
+            </li>
+            <li>
+              <span class="when">2021 – 2022</span>
+              <strong>SENAI, Jaraguá do Sul, Brazil</strong>
+              <span class="role">Technical degree in Systems Development</span>
+              <p>Object-oriented programming, databases, web development.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="wrap">
+      <p class="eyebrow">Skills</p>
+      <h2>Tools I work with</h2>
+      <div class="skills">
+        <div class="skill-box">
+          <h3>Simulation &amp; engineering</h3>
+          <ul class="tags"><li>OpenDSS</li><li>MATLAB</li><li>Simulink</li><li>PLECS</li><li>PSIM</li></ul>
+        </div>
+        <div class="skill-box">
+          <h3>Programming &amp; data</h3>
+          <ul class="tags"><li>Python</li><li>Pandas</li><li>Scikit-learn</li><li>Matplotlib</li><li>C/C++</li><li>ESP-IDF</li><li>PlatformIO</li><li>Java</li><li>SQL</li><li>VHDL</li></ul>
+        </div>
+        <div class="skill-box">
+          <h3>Languages</h3>
+          <ul class="tags"><li>Portuguese · native</li><li>English · C1</li><li>French · B2</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's talk</h2>
+      <p class="lead">I'm looking for a 2nd-year internship in summer 2027, ideally in power electronics, grid integration or power system studies.</p>
+      <ul class="contact-list">
+        <li><span>Email</span><a href="mailto:eduardo.borgonha-lopes@etu.inp-n7.fr">eduardo.borgonha-lopes@etu.inp-n7.fr</a></li>
+        <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/eduardo-borgonha-lopes-1304a2300" target="_blank" rel="noopener">eduardo-borgonha-lopes</a></li>
+        <li><span>GitHub</span><a href="https://github.com/eduardoBorgonha" target="_blank" rel="noopener">eduardoBorgonha</a></li>
+        <li><span>Location</span>Toulouse, France</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Eduardo Borgonha Lopes</div>
+</footer>
+
+</body>
+</html>
